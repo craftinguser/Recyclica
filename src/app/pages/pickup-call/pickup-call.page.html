@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color ="secondary">
+    <ion-buttons slot ="start">
+      <ion-back-button text="">
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>pickup-call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src ="/ionic-new/src/map.png"/>
+ <ion-card>
+  <ion-card-content>
+    <p>Address:</p>
+    <p>Complememt:</p>
+    <p>Neighbourhood:</p>
+    <p>Zip Code:</p>
+    <p>City Name:</p>
+  </ion-card-content>
+ </ion-card>
+ <ion-list>
+  <ion-item lines ="insert">
+<ion-label position ="floating">
+Notes
+</ion-label>
+<ion-textarea></ion-textarea>
+  </ion-item>
+ </ion-list>
+ <ion-button size ="full" color="secondary" (click) ="newPickupCall()">Create pickup call</ion-button>
+</ion-content>

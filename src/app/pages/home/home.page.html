@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Reciclica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-list color ="secondary">
+  <ion-item color ="secondary">
+    <ion-avatar slot ="start">
+<img src ="https://gravatar.com/avatar/b3f049e21454186b13307a87b6a3d0ef?s=400&d=robohash&r=x"/>
+    </ion-avatar>
+    <ion-label>
+      <h1>Emma Watson</h1>
+      <p>Gathered:<span class ="money">$15,000</span></p>
+    </ion-label>
+  </ion-item>
+ </ion-list>
+<app-pickup-call-card status ="hold" updatedAt="01/11/2023 12:31" 
+createdAt="31/10/2023 14:02" notes="New Bin">
+<ion-card-header header>
+  <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+</ion-card-header>
+<ion-button footer color="secondary" fill="clear" size="full" (click)="goToPickupCalls()">See all...</ion-button>
+</app-pickup-call-card>
+<!-- <div class="container">
+   <ion-button (click)="captureImage()">
+    Click Picture
+ </ion-button>
+ <img [src]="clickedImage" />
+</div> -->
+
+ 
+ <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button color ="secondary" (click)=" newPickupCall()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>
